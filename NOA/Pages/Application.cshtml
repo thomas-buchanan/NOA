@@ -5,4 +5,15 @@
 }
 <h2>@ViewData["Title"]</h2>
 
+<div>
+    <h4>Single File Upload</h4>
 
+    <form asp-controller="Application" asp-action="SingleFile" 
+          enctype="multipart/form-data" method="post">
+
+        <input type="file" name="file"/>
+        <br/>
+        <button type="submit">Submit</button>
+    </form>
+
+</div>
